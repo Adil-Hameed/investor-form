@@ -152,7 +152,7 @@ export default function Number() {
             </div>
 
             <div className='text-center py-5'>
-                <Link to="">
+                <Link to="/success">
                     <p className='ms-2 pointer d-inline-block light-green p-3 px-md-5 px-4 fw-semibold dark-blue-text mb-0 fw-normal rounded roboto'>
                         Submit
                     </p>
