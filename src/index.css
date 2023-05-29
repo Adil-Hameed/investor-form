@@ -436,6 +436,10 @@ h2 {
   display: none;
 }
 
+.check-box-parent input[type="checkbox"] {
+  display: none;
+}
+
 .check-box-parent-number input[type="radio"] {
   display: none;
 }
@@ -459,7 +463,17 @@ h2 {
   cursor: pointer;
   width: 320px;
 }
-
+.check-box-parent input[type="checkbox"]~span {
+  position: relative;
+  display: inline-block;
+  padding: 16px 16px 16px 45px;
+  border: 1px solid #D9D9D9;
+  color: #7F7F7F;
+  border-radius: 8px;
+  text-align: start;
+  cursor: pointer;
+  width: 320px;
+}
 .check-box-parent-number input[type="radio"]~span {
   position: relative;
   display: inline-block;
@@ -474,6 +488,9 @@ h2 {
 
 @media screen and (max-width: 576px) {
   .check-box-parent input[type="radio"]~span {
+    width: 220px;
+  }
+  .check-box-parent input[type="checkbox"]~span {
     width: 220px;
   }
 }
@@ -491,7 +508,13 @@ h2 {
   border: 1px solid #40FF62;
   color: #000018;
 }
-
+.check-box-parent input[type="checkbox"]:checked~span {
+  position: relative;
+  display: inline-block;
+  padding: 16px 16px 16px 45px;
+  border: 1px solid #40FF62;
+  color: #000018;
+}
 .check-box-parent-number input[type="radio"]:checked~span {
   position: relative;
   display: inline-block;
@@ -532,6 +555,18 @@ input[type="range"]::-webkit-slider-thumb {
   top: 20px;
 }
 
+.check-box-parent input[type="checkbox"]~span:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border: 1px solid #D9D9D9;
+  border-radius: 50%;
+  left: 16px;
+  top: 20px;
+}
 .check-box-parent-number input[type="radio"]~span:before {
   content: "";
   position: absolute;
@@ -561,7 +596,10 @@ input[type="checkbox"]:checked {
   background-color: #40FF62;
   border: 1px solid #40FF62;
 }
-
+.check-box-parent input[type="checkbox"]:checked~span:before {
+  background-color: #40FF62;
+  border: 1px solid #40FF62;
+}
 .check-box-parent-number input[type="radio"]:checked~span:before {
   background-color: #40FF62;
   border: 1px solid #40FF62;
@@ -666,15 +704,9 @@ input[type="checkbox"]:checked {
 }
 
 .map-top-gap {
-  margin-top: -100px;
+  margin-top: -50px;
 }
 
-@media screen and (max-width: 1400px) {
-  .map-top-gap {
-    margin-top: -75px;
-  }
-
-}
 
 @media screen and (max-width: 1024px) {
   .map-top-gap {
@@ -695,4 +727,8 @@ input[type="checkbox"]:checked {
     margin-top: -20px;
   }
 
+}
+
+.unlike-img{
+  transform: rotate(180deg);
 }
