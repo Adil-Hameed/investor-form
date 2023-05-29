@@ -15,22 +15,22 @@ export default function LeaseTerm() {
                 </p>
 
                 <label className='check-box-parent mb-3'>
-                    <input type="radio" name='year' />
+                    <input type="checkbox" name='year' />
                     <span className=''>Fix and Flip</span>
                 </label>
 
                 <label className='check-box-parent mb-3'>
-                    <input type="radio" name='year' />
+                    <input type="checkbox" name='year' />
                     <span className=''>Buy and Hold</span>
                 </label>
 
                 <label className='check-box-parent mb-3'>
-                    <input type="radio" name='year' />
+                    <input type="checkbox" name='year' />
                     <span className=''>Assign the Contract</span>
                 </label>
 
                 <label className='check-box-parent'>
-                    <input type="radio" name='year' />
+                    <input type="checkbox" name='year' />
                     <span className=''>Other</span>
                 </label>
 
